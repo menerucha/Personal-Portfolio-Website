@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education - Rucha Mene's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html" class="active">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="extracurricular.html">Extracurricular</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech Computer Science Engineering</td>
+            <td>VIT Bhopal University</td>
+            <td>Oct 2022 - Oct 2026</td>
+            <td>GPA: 8.34/10</td>
+          </tr>
+          <tr>
+            <td>12th Standard</td>
+            <td>Reliance Foundation School</td>
+            <td>Jul 2022</td>
+            <td>PCMB Stream, Percentage: 78%</td>
+          </tr>
+          <tr>
+            <td>10th Standard</td>
+            <td>Reliance Foundation School</td>
+            <td>Jul 2020</td>
+            <td>Percentage: 85%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Rucha Mene. All rights reserved.</p>
+      <button id="scrollToTopBtn">Scroll to Top</button>
+    </footer>
+
+    <script>
+      // Smooth scroll to top
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Highlight the active page in the navigation
+      document.querySelectorAll("nav ul li a").forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
